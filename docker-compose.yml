@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: astro-docker-demo-static:latest
+    container_name: astro-docker-demo-static
+    ports:
+      - "4321:80"
+    restart: unless-stopped
