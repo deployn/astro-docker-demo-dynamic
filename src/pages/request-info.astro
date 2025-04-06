@@ -1,0 +1,12 @@
+---
+export const prerender = false;
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const userAgent = Astro.request.headers.get("user-agent") || "Unbekannt";
+---
+
+<BaseLayout title="Anfrageinformationen">
+  <h1>Deine Browser Informationen</h1>
+  <p>Dein Browser identifiziert sich als:</p>
+  <pre><code>{userAgent}</code></pre>
+</BaseLayout>

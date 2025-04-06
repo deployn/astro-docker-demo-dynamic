@@ -18,7 +18,19 @@ const currentPath = Astro.url.pathname;
               active: currentPath === "/about" || currentPath === "/about/",
             }}
           >
-            Über dieses Projekt
+            Über
+          </a>
+        </li>
+        <li>
+          <a
+            href="/request-info"
+            class:list={{
+              active:
+                currentPath === "/request-info" ||
+                currentPath === "/request-info/",
+            }}
+          >
+            Info
           </a>
         </li>
       </ul>
