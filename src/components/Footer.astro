@@ -1,0 +1,20 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container">
+    <p>© {year} Astro Container Demo. Erstellt mit Astro</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--color-light-gray);
+    padding: calc(var(--spacing-unit) * 1.5) 0;
+    text-align: center;
+    color: var(--color-secondary);
+    margin-top: calc(var(--spacing-unit) * 2);
+    font-size: 0.9rem;
+  }
+</style>

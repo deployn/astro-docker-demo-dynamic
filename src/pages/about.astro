@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Über dieses Projekt"
+  description="Informationen über das Astro Demo Projekt"
+>
+  <h1>Über dieses Projekt</h1>
+  <p>
+    Diese Demo-Anwendung wurde erstellt, um den Prozess der Containerisierung
+    einer mit Astro.js gebauten statischen Website zu demonstrieren.
+  </p>
+  <p>
+    Astro ist ein modernes Web-Framework zum Erstellen schneller,
+    inhaltsorientierter Websites. Es zeichnet sich durch folgende Merkmale aus:
+  </p>
+  <ul>
+    <li>
+      <strong>Component Islands:</strong> Lädt interaktives JavaScript nur bei Bedarf.
+    </li>
+    <li>
+      <strong>Server-First:</strong> Standardmässig wird so viel wie möglich auf
+      dem Server gerendert (bei `output: 'static'` zur Build-Zeit).
+    </li>
+    <li>
+      <strong>UI-Agnostisch:</strong> Unterstützt React, Preact, Svelte, Vue, SolidJS,
+      Lit und mehr.
+    </li>
+    <li>
+      <strong>Inhaltsorientiert:</strong> Ideal für Blogs, Marketingseiten, Dokumentationen
+      und E-Commerce.
+    </li>
+  </ul>
+  <p>
+    Der Build-Prozess (`npm run build`) erzeugt einen `dist/`-Ordner mit allen
+    statischen Assets. Dieser Ordner kann dann einfach in ein Docker-Image
+    kopiert und mit einem Webserver wie Nginx oder Caddy ausgeliefert werden.
+  </p>
+  <a href="/">Zurück zur Hauptseite</a>
+</BaseLayout>
+
+<style>
+  ul {
+    list-style: disc;
+    margin-left: calc(var(--spacing-unit) * 1.5);
+    margin-bottom: var(--spacing-unit);
+  }
+  li {
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+  }
+  a:last-of-type {
+    display: inline-block;
+    margin-top: calc(var(--spacing-unit) * 1.5);
+    font-weight: bold;
+  }
+</style>
