@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: astro-docker-demo-static:latest
-    container_name: astro-docker-demo-static
+    image: astro-docker-demo-dynamic:latest
+    container_name: astro-docker-demo-dynamic
     ports:
-      - "4321:80"
+      - "4321:4321"
     restart: unless-stopped
